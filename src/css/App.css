@@ -1,0 +1,141 @@
+.App {
+  width: 100%;
+  min-width: 350px;
+  min-height: 100vh;
+  padding: 1em;
+  background-color: #eee;
+  transition: 0.3s;
+}
+
+.wrapper {
+  max-width: 500px;
+  min-height: 93vh;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px 5px #00000022;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #004dd2;
+  padding: 0 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 30px;
+}
+
+form {
+  width: 100%;
+  padding: 10px 20px 0 20px;
+  display: flex;
+}
+
+form label {
+  display: none;
+}
+
+form input[type="text"] {
+  flex: 1;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 0 10px;
+  outline-color: #004dd2;
+  border: 2px solid rgb(132, 132, 132);
+}
+
+form button {
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 214, 0);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  min-height: 40px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.item label {
+  flex: 1;
+  margin: 1px 10px 0 10px;
+  word-break: break-all;
+}
+
+.item input {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+}
+
+.item button {
+  padding: 5px 10px;
+  background-color: rgb(255, 25, 13);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+main > p {
+  margin: 0 auto;
+  font-size: 20px;
+  color: #555;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #004dd2;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .App {
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: none;
+  }
+}
